@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Monotype Corsiva', cursive;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  text-align: center;
+  color: white;
+}
+
+/* Title */
+.title {
+  font-size: 42px;
+  animation: fadeIn 2s ease;
+}
+
+/* Instructions */
+.instruction {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* Box animation */
+.box {
+  font-size: 90px;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.1); }
+}
+
+/* Typing text */
+.typing {
+  font-size: 28px;
+  font-weight: bold;
+  width: 70%;
+  margin: auto;
+}
+
+/* Cake */
+.cake {
+  font-size: 90px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cake:active {
+  transform: scale(0.8);
+}
+
+/* Slideshow */
+#slide {
+  width: 450px;
+  height: 280px;
+  border-radius: 20px;
+  transition: opacity 1s;
+}
+
+/* Pets */
+.pet {
+  position: absolute;
+  width: 120px;
+  animation: float 6s infinite ease-in-out;
+}
+
+.pet1 { left: 5%; top: 60%; }
+.pet2 { right: 5%; top: 60%; }
+
+@keyframes float {
+  50% { transform: translateY(-30px); }
+}
+
+/* Ending fade */
+.fade {
+  font-size: 30px;
+  animation: fadeIn 3s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
