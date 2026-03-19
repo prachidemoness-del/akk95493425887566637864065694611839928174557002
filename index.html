@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Divya 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onclick="startMusicOnce()">
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<canvas id="canvas"></canvas>
+
+<h1 class="title">💖 Happy Birthday Divya 💖</h1>
+<p class="instruction">👉 Tap the Surprise Box</p>
+
+<!-- Floating pets -->
+<img src="cat.gif" class="pet pet1">
+<img src="dog.gif" class="pet pet2">
+
+<!-- Surprise Box -->
+<div class="box" onclick="openBox(event)">
+  🎁
+</div>
+
+<!-- Typing Message -->
+<div id="message" class="hidden typing"></div>
+
+<!-- Cake -->
+<div id="cakeSection" class="hidden">
+  <p>👉 Click the cake to cut 🎂</p>
+  <div class="cake" onclick="cutCake()">🎂</div>
+</div>
+
+<!-- Slideshow -->
+<div id="slideshow" class="hidden">
+  <img id="slide">
+</div>
+
+<!-- Ending -->
+<div id="ending" class="hidden fade">
+  💖 You are truly special 💖 <br>
+  Thank you for existing ✨ <br>
+  Stay happy always 😊
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
